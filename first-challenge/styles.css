@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px;
+  height: 100vh;
+  background-color: rgb(186, 71, 90);
+  font-size: 0.75rem;
+  color: white;
+  display: grid;
+  gap: 0.625rem;
+  /* text-align: center; */
+  grid-template-areas:
+    "header header header header header"
+    "aside nav nav nav nav"
+    "aside main main main main"
+    "aside main main main main"
+    "aside main main main main"
+    "aside main main main main"
+    "aside main main main main"
+    "aside main main main main"
+    "aside main main main main"
+    "footer footer footer footer footer";
+}
+
+div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  grid-area: header;
+  background-color: black;
+}
+
+aside {
+  grid-area: aside;
+  background-color: orange;
+}
+
+nav {
+  grid-area: nav;
+  background-color: peachpuff;
+}
+
+main {
+  grid-area: main;
+  background-color: lightgray;
+}
+
+footer {
+  grid-area: footer;
+  background-color: black;
+}
